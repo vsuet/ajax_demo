@@ -24,16 +24,7 @@ main>hr {
     text-align: center;
     border: none;
 }
-main>hr:before {
-    content: '';
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: black;
-    margin: 0 0.4em;
-}
-main>hr:after {
+main>hr:before, main>hr:after {
     content: '';
     display: inline-block;
     width: 14px;
