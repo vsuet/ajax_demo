@@ -56,8 +56,34 @@ button:hover {
 .submit {
     background-color: green;
     color: white;
+    margin-right: 0.25rem;
 }
 .clear {
     background-color: orangered;
     color: white;
+}
+
+/* CARD */
+#output {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    padding: 1rem;
+}
+.card {
+    border: gray dotted 1px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.card-header {
+    text-align: center;
+    color: darkblue;
+}
+.card-body {
+    font-size: 0.8rem;
+}
+.card-footer {
+    text-align: right;
+    color: rgba(0,0,0, 0.5);
 }

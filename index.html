@@ -18,10 +18,12 @@
 <hr>
 
 <main>
+    <section id="error"></section>
+
     <section>
-        <form action="https://jsonplaceholder.typicode.com/comments" method="get">
+        <form id="form-post">
             <label for="post-id" class="form-element">Post ID</label>
-            <input type="number" min="1" max="3" step="1" id="post-id" name="postId" class="form-element" required>
+            <input type="number" min="1" max="3" step="1" id="post-id" class="form-element" required>
             <button type="submit" class="form-element submit">Submit</button>
             <button type="reset" class="form-element clear">Clear</button>
         </form>
@@ -29,8 +31,9 @@
 
     <hr>
 
-    <section id="post-output"></section>
+    <section id="output"></section>
 </main>
 
+<script src="script.js"></script>
 </body>
 </html>
