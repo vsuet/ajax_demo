@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>AJAX Demo</h1>
+</header>
+
+<hr>
+
+<main>
+    <section>
+        <form action="https://jsonplaceholder.typicode.com/comments" method="get">
+            <label for="post-id" class="form-element">Post ID</label>
+            <input type="number" min="1" max="3" step="1" id="post-id" name="postId" class="form-element" required>
+            <button type="submit" class="form-element submit">Submit</button>
+            <button type="reset" class="form-element clear">Clear</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section id="post-output"></section>
+</main>
+
+</body>
+</html>

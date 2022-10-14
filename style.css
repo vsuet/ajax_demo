@@ -1,0 +1,72 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/* ROOT */
+html {
+    font-size: 20pt;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    margin: 1rem;
+}
+
+/* HR */
+main>hr {
+    margin: 1.5em 0;
+    text-align: center;
+    border: none;
+}
+main>hr:before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: black;
+    margin: 0 0.4em;
+}
+main>hr:after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: black;
+    margin: 0 0.4em;
+}
+
+/* FORM */
+form{
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.form-element {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+button {
+    border-radius: 10px;
+    border: none;
+    width: 4rem;
+    height: 1.5rem;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: -0.2rem 0.2rem 0 0 gray;
+}
+.submit {
+    background-color: green;
+    color: white;
+}
+.clear {
+    background-color: orangered;
+    color: white;
+}
