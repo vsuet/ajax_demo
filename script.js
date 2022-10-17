@@ -1,5 +1,6 @@
-const form = document.getElementById('form-post');
 const baseUrl = 'https://jsonplaceholder.typicode.com/comments';
+
+const form = document.getElementById('form-post');
 const output = document.getElementById('output');
 const postId = document.getElementById('post-id');
 
@@ -34,19 +35,25 @@ function outputError(msg) {
 function outputComments(comments) {
     for (const comment of comments) {
         output.innerHTML += `
-<div class="card">
-    <div class="card-header">
+<section class="card" id="comment-${comment.id}">
+    <header class="card-header">
         <h4>${comment.name}</h4>
-    </div>
+        <button type="button" onclick="closeComment(${comment.id})">x</div>
+    </header>
     
     <div class="card-body">
         <p>${comment.body}</p>
     </div>
     
-    <div class="card-footer">
+    <footer class="card-footer">
         <p>${comment.email}</p>
-    </div>
-</div>
+    </footer>
+</section>
         `;
     }
+}
+
+function closeComment(id) {
+    const comment = document.getElementById(`comment-${id}`);
+    comment.classList.add('visible_off');
 }
